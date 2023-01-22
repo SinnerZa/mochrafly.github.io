@@ -1,0 +1,95 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<div class="">
+   <center>
+<img src="dragon nest 2.png" width="30%">
+</div>
+
+<div class="w3-bar w3-Orange">
+ <button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Profil')">Profil</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Warrior')">Warrior</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Cleric')">Cleric</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Archer')">Archer</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Sorceress')">Sorceress</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Tingkerer')">Tingkerer</button>
+
+<!- #Membuat Drop down menu->
+<div class="w3-dropdown-hover">
+    <button class="w3-button>" </button>
+</div>
+</div>
+<!- End dropdown menu ->
+
+<div id="Home" class="w3-container kota w3-animate-zoom" style="display:block">
+    <center>
+    <h1>5 Karakter Dragon Nest<hr>
+    Selamat Datang </h1>
+    <hr>
+ </div>
+
+ <div id="Profil" class="w3-container kota w3-animate-zoom" style="display:block">
+   <center>
+      <img src="Rafly.jfif" width="20%">
+   <h1>Mochammad Rafly<hr>
+   <hr>IF-4<hr>10122126<hr></h1>
+   <hr>
+</div>
+
+<div id="Warrior" class="w3-container kota w3-animate-top" style="display:none">
+    <center><h1>Warrior</h1>
+      <hr>
+    <p>Warrior adalah class Dragon Nest yang menggunakan senjata jarak dekat seperti sword, hammer, dan axe. Warrior memiliki physical attack yang kuat, kemampuan untuk menghindar yang baik dan dapat melakukan serangan combo yang cepat.</p>
+    <hr>
+    <img src="Warrior 1.webp" width="50%">
+ </div>
+
+ <div id="Cleric" class="w3-container kota w3-animate-opacity" style="display:none">
+    <center><h1>Cleric</h1>
+      <hr>
+    <p>Cleric merupakan satu-satunya class main tanker semi support di World of Dragon Nest. Cleric memiliki defense dan health yang sangat tinggi, serta memiliki kemampuan yang dapat memblokir serangan musuh.</p>
+    <hr>
+    <img src="cleric.jfif" width="50%">
+ </div>
+
+ <div id="Archer" class="w3-container kota w3-animate-bottom" style="display:none">
+    <center><h1>Archer</h1>
+      <hr>
+    <p>Archer adalah karakter tergesit di Drgaon Nest. Keunggulan karakter ini adalah serangan jarak jauh dan skill mengindar yang dimilikinya. Wind Walker: Wind Walker, memilki skill Rising Storm yang akan menarik musuh dan meluncurkannya ke atas.</p>
+    <hr>
+    <img src="archer.jfif" width="50%">
+ </div>
+
+ <div id="Sorceress" class="w3-container kota w3-animate-left" style="display:none">
+    <center><h1>Sorceress</h1>
+      <hr>
+    <p>Sorceress adalah karakter Dragon Nest yang menggunakan tongkat sebagai senjata utamanya, Sorceress memiliki daya serang magic yang tinggi dan dapat bergerak selagi menyerang dengan basic attack.</p>
+    <hr>
+    <img src="Sorceress.jfif"  width="50%">
+ </div>
+
+ <div id="Tingkerer" class="w3-container kota w3-animate-Right" style="display:none">
+   <center><h1>Tingkerer</h1>
+      <hr>
+   <p>Tinkerer atau yang disebut juga dengan Academic, menggunakan sebuah cannon dan kabala sebagai senjata utamanya. Sehingga membuat Tinkerer unggul dalam pertarungan jarak jauh.</p>
+   <hr>
+   <img src="tinkerer.jfif"  width="50%">
+</div>
+ <script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+
+
+
+
+
+
+
+
+</script>
